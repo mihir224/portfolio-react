@@ -5,7 +5,6 @@ import Sidebar from '../Sidebar/Sidebar';
 
 function Introduction(){
     const [animationComplete,setAnimationComplete]=useState(false);
-    const [more,setMore]=useState(false);
     const variants={
         visible:{
             opacity:1,
@@ -14,7 +13,17 @@ function Introduction(){
         hidden:{opacity:0}
         
     }
-    const items=["Software Engineer","Problem Solver","Web Enthusiast"];
+
+    const items=[
+        {
+            title:"See Projects",
+            section:"Projects"
+        },
+        {
+            title:"Contact Me",
+            section:"Coding & Socials"
+        }
+    ]
     const handleAnimationComplete=()=>{
         setAnimationComplete(true);
     }
@@ -22,22 +31,64 @@ function Introduction(){
         <div id='intro-div'>
             <Sidebar/>
             <div id='intro-wrapper'>
+            <div id='img-container'>
+                <motion.img 
+                id='dp' 
+                src='/photo-cropped.png' 
+                alt='mihir.jpg' 
+                initial={{y:500,opacity:0}} 
+                animate={{y:0,opacity:1,
+                transition:{duration:1.2}}}>
+                </motion.img>
+            </div>
+            <div id='intro-txt'>
             <motion.h1
-                id='intro-h1'
+                id='name'
                 initial={{opacity:0,y:50}} 
                 animate={{opacity:1,y:0}} 
-                transition={{duration:1}}
-                onAnimationComplete={handleAnimationComplete}
-               
+                transition={{duration:1,delay:1}}
                 >
-                Hey there... I'm <span id='name' >Mihir Saini</span>
+                MIHIR SAINI
             </motion.h1>
-            <motion.ul id='abt-list'  animate={animationComplete?"visible":"hidden"} variants={variants} >
+            <motion.h1 
+            id='desc'
+            initial={{opacity:0,y:50}} 
+            animate={{opacity:1,y:0}} 
+            transition={{duration:1,delay:1.8}}
+            onAnimationComplete={handleAnimationComplete}
+            >Software Developer & Web Enthusiast</motion.h1>
+            <motion.div id='btn-div'  
+            animate={animationComplete?"visible":"hidden"} 
+            variants={variants} 
+            
+            >
                 {items.map((item)=>(
-                    <motion.li variants={variants} key={item} whileTap={{scale:0.9}} whileHover={{scale:1.05}}>{item}</motion.li>
+                    <motion.a
+                    href={`#${item.section}`}
+                    variants={variants} 
+                    key={item} 
+                    whileTap={{scale:0.9}} 
+                    whileHover={{background:'white',color:'black'}}
+                    >{item.title}</motion.a>
                 ))}
-            </motion.ul>
-            {/* <h2 style={{display:more?"inline":"none"}}>Find out more about me below</h2> */}
+            </motion.div>
+            <motion.div 
+            id='scroll-div'
+            animate={{opacity:0,y:20,transition:{duration:1.5,repeat:Infinity,delay:3.8}}}
+            whileTap={{scale:1.2}}
+            >
+                <a id='scroll-btn' href='#Projects'>
+                    <img 
+                    src='/scrollDown.png' 
+                    alt='scroll.jpg'
+                    ></img>
+                </a>
+            </motion.div>
+            <div id='sliding-txt'>
+                <motion.h1 initial={{x:"100%"}}
+            animate={{x:"-100%",transition:{duration:40,repeat:Infinity}}}>SOFTWARE DEVELOPMENT. CODING. WEB. FOOTBALL. MUSIC. PROBLEM SOLVING.</motion.h1>
+            </div>
+            </div>
             </div>
         </div>
     )

@@ -4,7 +4,7 @@ import Introduction from './components/Introduction/Introduction';
 function App() {
   return (
     <div className="App">
-      <section id='intro'>
+      <section id='Home'>
         <Introduction/>
       </section>
       <section id='Projects'>sec2</section>

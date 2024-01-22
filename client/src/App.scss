@@ -1,5 +1,5 @@
 .App {
-    background-color: #030637;
+    background: linear-gradient(180deg,#030637,#3C0753);
     color: white;
   }
 
@@ -22,7 +22,7 @@
     scroll-snap-align: center;
   }
 
-  #intro{
+  #Home{
     display: flex;
     justify-content: center;
     align-items: center;
