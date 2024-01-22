@@ -6,5 +6,6 @@ A project that I'm currently working on where I'll be creating a website using R
 
 - Intialised project
 - Configured sass and framer motion
-- Worked on the animation of introduction page and sidebar
+- Worked on the animation of homepage and sidebar
+- Home section completed
 
