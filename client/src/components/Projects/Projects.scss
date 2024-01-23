@@ -1,0 +1,49 @@
+#projects-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+#card-body{
+    display: flex;
+    border-radius: inherit;
+    flex-direction: column;
+    height: 100%;
+    padding:10px 15px;
+    gap:10px;
+    h2{
+        font-size: 32px;
+    }
+    h2,p{
+        margin:0;
+        padding:0;
+    }
+    p{
+        text-align: justify;
+        opacity: 0.8;
+        font-size: 15px;
+    }
+    img{
+        width: 100%;
+        border-radius: 5px;
+    }
+    a{
+        border: 1px solid black;
+        margin:0;
+        align-self:center;
+        font-size: 15px;
+        padding:5px;
+        border-radius: 7px;
+        text-decoration: none;
+        color:inherit;
+        &:active{
+            transform: scale(0.9);
+        }
+        &:hover{
+            background-color: black;
+            color: #EEF5FF;
+        }
+    }
+    
+}
+
