@@ -4,8 +4,9 @@
   }
 
   html {
-    scroll-snap-type: y mandatory;
+    // scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
+ 
   }
   
   
@@ -13,20 +14,31 @@
     font-family: 'poppins';
     margin:0;
     padding:0;
-   
+    overflow-x: hidden;
  
   }
 
   section{
     height: 100vh;
     scroll-snap-align: center;
+
   }
+  
 
   #Home{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+#Projects{
+    background: linear-gradient(to bottom, #030637, #ffffff);
+    
+}
+
+#project-details{
+   background: linear-gradient(to bottom,#587a91,skyblue);  
 }
 
 button{
