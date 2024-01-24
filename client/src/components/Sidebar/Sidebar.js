@@ -3,7 +3,7 @@ import './Sidebar.scss';
 import {motion} from 'framer-motion';
 
 function Sidebar(){
-    const links=["Home","Projects","Work","Resume","Coding & Socials"]
+    const links=["Home","Projects","Work","Coding+Socials"]
     const [open,setOpen]=useState(false);
     
     const variants={
