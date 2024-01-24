@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import './Introduction.scss';
-import {motion} from 'framer-motion';
+import {m, motion} from 'framer-motion';
 import Sidebar from '../Sidebar/Sidebar';
 
 function Introduction(){
@@ -22,6 +22,10 @@ function Introduction(){
         {
             title:"Contact Me",
             section:"Coding & Socials"
+        },
+        {
+            title:"Download Resume",
+            section:"/resume.pdf"
         }
     ]
     const handleAnimationComplete=()=>{
@@ -62,15 +66,31 @@ function Introduction(){
             variants={variants} 
             
             >
-                {items.map((item)=>(
-                    <motion.a
-                    href={`#${item.section}`}
-                    variants={variants} 
-                    key={item} 
-                    whileTap={{scale:0.9}} 
-                    whileHover={{background:'white',color:'black'}}
-                    >{item.title}</motion.a>
-                ))}
+                {items.map((item,idx)=>
+                    {
+                        if(idx===2){
+                            return(
+                                <motion.a
+                                href={item.section}
+                                variants={variants} 
+                                key={item} 
+                                whileTap={{scale:0.9}} 
+                                whileHover={{background:'white',color:'black'}}
+                                download={'Mihir Saini.pdf'}
+                                >{item.title}</motion.a>
+                            )
+                        }
+                        return(
+                            <motion.a
+                            href={`#${item.section}`}
+                            variants={variants} 
+                            key={item} 
+                            whileTap={{scale:0.9}} 
+                            whileHover={{background:'white',color:'black'}}
+                            >{item.title}</motion.a>
+                        )
+                    }
+                )}
             </motion.div>
             <motion.div 
             id='scroll-div'

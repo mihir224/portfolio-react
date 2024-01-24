@@ -1,5 +1,4 @@
 .App {
-    background: linear-gradient(180deg,#030637,#3C0753);
     color: white;
   }
 
@@ -40,7 +39,19 @@
 #project-details{
    background: linear-gradient(to bottom,#587a91,skyblue);  
 }
+#Work{
+    background: linear-gradient(to bottom,skyblue,#ffffff);  
+ }
 
+#work-details{
+    background: linear-gradient(to bottom, #dcba84, #030637);
+ }
+#Coding\+Socials{
+    background: linear-gradient(to bottom, #030637, #3C0753);
+ }
+ #cs-details{
+    background:linear-gradient(to bottom,#524746,#3C0753);
+ }
 button{
     transition-duration: 0.2s;
     cursor: pointer;

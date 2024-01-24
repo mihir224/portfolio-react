@@ -1,14 +1,14 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import './Projects.scss';
+import projects from './Project.json';
 
 function Projects(){
     return (
         <div id='projects-div'>
-            <ProjectCard/>
-            <ProjectCard/>
-            <ProjectCard/>
-            <ProjectCard/>
+            {projects.map((project,idx)=>(
+                 <ProjectCard key={idx} project={project}/>
+                 ))}
         </div>
         
     )

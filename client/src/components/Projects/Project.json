@@ -1,0 +1,34 @@
+[
+    {
+        "id":1,
+        "title":"ChatZilla",
+        "imgUrl":"/cz.png",
+        "projectDesc":"A chat web application powered by Socket.IO, designed to provide real-time messaging capabilities for users. Provides functionality to join and text in multiple rooms simultaneously, with chats being stored in a NoSQL DB and access only to authenticated users",
+        "github":"https://github.com/mihir224/chat-zilla",
+        "live":"https://chat-zilla.netlify.app/"
+    },
+    {
+        "id":2,
+        "title":"MS Tube",
+        "imgUrl":"/mst.png",
+        "projectDesc":"A user-friendly video sharing platform with a user interface similar to that of YouTube built from scratch, facilitating effortless sign-in and video uploads for multiple users. All the relevant information like channel details, subscriber data, video likes/dislikes, is securely stored on MongoDB Cloud. Provides search functionality and utilizes JSON Web Tokens(JWT) for secure user authentication",
+        "github":"https://github.com/mihir224/youtube-clone",
+        "live":"https://ms-tube.netlify.app/"
+    },
+    {
+        "id":3,
+        "title":"Quiziosity",
+        "imgUrl":"/Quiz.png",
+        "projectDesc":"A fully functional React based quiz web app where users have the ability to add/delete questions and test themselves with their knowledge of React.js. Redux is used to store user input, enabling the calculation of the final result based on their responses",
+        "github":"https://github.com/mihir224/quiz-app",
+        "live":"https://quiziosity224.onrender.com/"
+    },
+    {
+        "id":4,
+        "title":"Prescriptify",
+        "imgUrl":"/prescriptify.png",
+        "projectDesc":"A React-based web app using OpenAI’s API to generate medical prescriptions from user input, populating a template with JSON. Streamlines prescription creation for healthcare professionals",
+        "github":"https://github.com/mihir224/prescription-generator",
+        "live":"https://prescriptify.netlify.app/"
+    }
+]

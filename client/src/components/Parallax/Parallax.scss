@@ -8,8 +8,13 @@
     overflow: hidden;
     h1{
         position: absolute;
-        font-size: 12vh;
+        font-size: 10vh;
+        transition-duration: 0.1s;
         z-index: 4;
+        &:hover{
+            opacity: 0.8;
+        }
+        cursor: pointer;
     }
 }
 
@@ -40,7 +45,6 @@
         width: 50%;
     }
     z-index: 3;
-  
 }
 #moon{
     background-color: transparent;
