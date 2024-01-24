@@ -11,5 +11,11 @@ A project that I'm currently working on where I'll be creating a website using R
 - Re-positioned sliding text
 - Added parallax effect in between sections (some work still required)
 - Used React tilt library to add tilt effect to project cards 
+- Structured the project section with tilt cards
+- Used react vertical timeline component for work section
+- Setup different parallaxes for different sections
+- Added social profiles and frameworks in the contact section
+- Setup emailjs for emailing service
+- Added "download resume" button on home page
 
 
