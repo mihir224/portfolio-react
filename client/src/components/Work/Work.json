@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "title":"Software Engineer Intern",
+        "company":"EagleView",
+        "logo":"/ev.png",
+        "roleDesc":"",
+        "date":"January 2024 - Present"
+    },
+    {
+        "id":2,
+        "title":"Software Developer Intern",
+        "company":"PearlThoughts",
+        "logo":"/pt.png",
+        "roleDesc":"Worked with the 1851 product team, developed the dashboard UI, while ensuring mobile responsiveness and seamlessly integrated user data into the dashboard. Raised around 65 PR’s most of which were merged into production",
+        "date":"June 2023 - July 2023"
+    },
+    {
+        "id":3,
+        "title":"Programmer Trainee",
+        "company":"PearlThoughts",
+        "logo":"/pt.png",
+        "roleDesc":"Scheduled automated daily messages to all workspace members at a designated time using cron scheduler, Streamlined the automatic creation of private channels for newly joined workspace members.",
+        "date":"May 2023 - June 2023"
+    }
+]
