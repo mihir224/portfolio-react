@@ -73,7 +73,7 @@ function Contact(){
       const sendEmail=(e)=>{
         e.preventDefault();
 
-        emailjs.sendForm('service_arxai48', 'template_onxtv13', formRef.current, 'RhqyJHLDET4Jt8Ler')
+        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, formRef.current, process.env.REACT_APP_PUBLIC_KEY)
       .then((result) => {
             setError(false);
             console.log(result.text);

@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 #intro-div{
     text-align: center;
     display: flex;
@@ -7,6 +9,9 @@
     background: linear-gradient(180deg,#3C0753,#030637);
     // background-image: url("../../../public/mountains.jpg");
     // background-size: cover;
+    @include mobile{
+       align-items: center;
+    }
 }
 
 #intro-wrapper{
@@ -15,6 +20,10 @@
    align-items: center;
     width: 50%;
     flex-direction: row;
+    @include mobile{
+        width: auto;
+        
+    }
 }
 
 h1{
@@ -83,9 +92,16 @@ h1{
     
     left:0;
     bottom:0;
+    @include mobile{
+        position: relative;
+    }
     img{
         height: 100%;
         background:transparent;
+        @include mobile{
+            height: 30%;
+            display: none;
+        }
     }
 }
 

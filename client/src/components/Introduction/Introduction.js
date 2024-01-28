@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import './Introduction.scss';
-import {m, motion} from 'framer-motion';
+import {motion} from 'framer-motion';
 import Sidebar from '../Sidebar/Sidebar';
 
 function Introduction(){

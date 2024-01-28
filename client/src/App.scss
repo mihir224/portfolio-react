@@ -1,11 +1,25 @@
+@mixin mobile{
+    @media (max-width:700px){
+        @content;
+    }
+}
+@mixin tablet{
+    @media (max-width:1024px){
+        @content;
+    }
+}
+@mixin desktop{
+    @media (max-width:1400px){
+        @content;
+    }
+}
+
 .App {
     color: white;
   }
 
   html {
-    // scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
- 
   }
   
   
@@ -14,7 +28,10 @@
     margin:0;
     padding:0;
     overflow-x: hidden;
- 
+
+    @include mobile{
+        overflow-x: scroll;
+    }
   }
 
   section{
@@ -64,3 +81,4 @@ a{
     text-decoration: none;
     color:inherit
 }
+
