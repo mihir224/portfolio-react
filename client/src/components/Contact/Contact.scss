@@ -1,0 +1,144 @@
+#contact-div{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    gap:40px;
+    width: 100%;
+}
+#profile-links{
+   z-index:999;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    h3{
+      margin:0;
+      padding:0;
+      display: flex;
+      align-items: center;
+      gap:4px
+    }
+    h3{
+        font-size: 24px;
+    }
+    a{
+        font-size: 18px;
+        opacity: 0.8;
+        transition-duration:0.2s ;
+        &:hover{
+            text-decoration: underline;
+        }
+    }  
+    
+}
+
+.profile{
+    margin:10px;
+    
+    padding:5px;
+}
+
+#contact-details{
+    z-index: 999;
+    transition-duration: 0.2s;
+    box-shadow: 0 0 6px rgba(238, 130, 238, 0.795);
+    border:1px solid transparent;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    gap:30px;
+    padding:20px;
+    &:hover{
+        border:1px solid rgba(238, 130, 238, 0.795);
+    }
+  
+    img{
+        width: 30%;
+        height: 30%;
+        align-self:center ;
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color:white;
+         gap:20px;
+         padding:5px;
+      
+        input{
+            padding:5px 10px;
+            height: 40px;
+            font-family: inherit;
+            font-size: 16px;
+            color: white;
+            border-radius: 7px;
+            border:2px solid white;
+            background-color: transparent;
+            outline: none;
+            transition-duration: 0.2s;
+            &::placeholder {
+                color:white
+            }
+            &:focus{
+                border: 2px solid rgba(238, 130, 238, 0.795);
+            }
+            
+           
+        }
+        textarea{
+            background-color: transparent;
+            resize: none;
+            color: white;
+            transition-duration: 0.2s;
+            border:2px solid white;
+            border-radius: 7px;
+            outline:none;
+            &::placeholder {
+                color:white
+            }
+            &:focus{
+                border: 2px solid rgba(238, 130, 238, 0.795);
+            }
+            padding:10px;
+            font-size: 16px;
+            
+        }
+        button{
+            align-self: center;
+            font-family: inherit;
+            font-size: 16px;
+            padding:5px 12px;
+            border-radius: 6px;
+            border:none;
+            font-weight: 600;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+    }
+
+}
+
+#phone-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    h2{
+        margin:0;
+        padding:0;
+        font-size:32px
+    }
+    
+}
+#details-div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    gap:20px;
+    padding:10px;
+}
+
+#fr-img{
+    height: 100%;
+    width: 100%;
+}

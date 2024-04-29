@@ -1,10 +1,24 @@
+@mixin mobile{
+    @media (max-width:700px){
+        @content;
+    }
+}
+@mixin tablet{
+    @media (max-width:1024px){
+        @content;
+    }
+}
+@mixin desktop{
+    @media (max-width:1400px){
+        @content;
+    }
+}
+
 .App {
-    background: linear-gradient(180deg,#030637,#3C0753);
     color: white;
   }
 
   html {
-    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
   }
   
@@ -13,14 +27,19 @@
     font-family: 'poppins';
     margin:0;
     padding:0;
-   
- 
+    overflow-x: hidden;
+
+    @include mobile{
+        overflow-x: scroll;
+    }
   }
 
   section{
     height: 100vh;
     scroll-snap-align: center;
+
   }
+  
 
   #Home{
     display: flex;
@@ -29,6 +48,27 @@
     flex-direction: column;
 }
 
+#Projects{
+    background: linear-gradient(to bottom, #030637, #ffffff);
+    
+}
+
+#project-details{
+   background: linear-gradient(to bottom,#587a91,skyblue);  
+}
+#Work{
+    background: linear-gradient(to bottom,skyblue,#ffffff);  
+ }
+
+#work-details{
+    background: linear-gradient(to bottom, #dcba84, #030637);
+ }
+#Coding\+Socials{
+    background: linear-gradient(to bottom, #030637, #3C0753);
+ }
+ #cs-details{
+    background:linear-gradient(to bottom,#524746,#3C0753);
+ }
 button{
     transition-duration: 0.2s;
     cursor: pointer;
@@ -41,3 +81,4 @@ a{
     text-decoration: none;
     color:inherit
 }
+
