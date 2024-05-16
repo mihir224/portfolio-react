@@ -15,8 +15,6 @@ function Parallax({type}){
     const pxbg=useTransform(scrollYProgress,[0,1],["0%","80%"]);
     const nxbg=useTransform(scrollYProgress,[0,1],["0","-80%"]);
     const rain=useTransform(scrollYProgress,[0,1],["0%","40%"]);
-    
-    // const cloudOpacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
     const starStyling={
         position:'absolute',

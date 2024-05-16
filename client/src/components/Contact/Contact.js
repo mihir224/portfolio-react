@@ -46,8 +46,8 @@ function Contact(){
     }
     const customStyling={
         zIndex:500,
-        height: '100px', 
-        width: '100px', 
+        height: '10vh', 
+        width: '10vh', 
         padding:'10px',
         borderRadius:'50px',
         boxShadow:'0px 0px 5px #EEF5FF',
@@ -114,7 +114,7 @@ function Contact(){
                 initial='hidden'
                 whileInView='visible'>
                     {links.map((link,idx)=>(
-                        <motion.div id='github' 
+                        <motion.div key={idx} id='github' 
                         className='profile' 
                         variants={linkVariants} >
                             <h3>{link.icon} {link.label}</h3>

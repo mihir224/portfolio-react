@@ -3,6 +3,12 @@
     align-items: center;
     justify-content: space-around;
     height: 100%;
+    @media screen and (max-width: 768px) {
+        flex-direction: column; // Change layout to column on smaller screens
+    }
+    @media screen and (max-width: 1300px) {
+        gap:10px;
+    }
 }
 #card-body{
     display: flex;
@@ -57,6 +63,6 @@
             }
         }
     }
-    
+   
 }
 

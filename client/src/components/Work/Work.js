@@ -36,9 +36,6 @@ function Work(){
             >
                 <h3 className="vertical-timeline-element-title">{workItem.title}</h3>
                 <h4 className="vertical-timeline-element-subtitle">{workItem.company}</h4>
-                <p>
-                {workItem.roleDesc}
-                </p>
             </VerticalTimelineElement>
             ))}
             

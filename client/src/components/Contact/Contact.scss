@@ -9,8 +9,7 @@
 #profile-links{
    z-index:999;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-
+    grid-template-columns: 0.5fr 0.5fr;
     h3{
       margin:0;
       padding:0;
@@ -33,13 +32,14 @@
 }
 
 .profile{
-    margin:10px;
-    
-    padding:5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10px;
 }
 
 #contact-details{
-    z-index: 999;
+    z-index: 995;
     transition-duration: 0.2s;
     box-shadow: 0 0 6px rgba(238, 130, 238, 0.795);
     border:1px solid transparent;
@@ -47,7 +47,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 400px;
+    width: 300px;
+    max-height:58vh;
     gap:30px;
     padding:20px;
     &:hover{
@@ -55,8 +56,8 @@
     }
   
     img{
-        width: 30%;
-        height: 30%;
+        width: 20%;
+        height: 20%;
         align-self:center ;
     }
     form{
@@ -68,7 +69,7 @@
          padding:5px;
       
         input{
-            padding:5px 10px;
+            padding:0 10px;
             height: 40px;
             font-family: inherit;
             font-size: 16px;

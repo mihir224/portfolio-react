@@ -19,8 +19,8 @@ function ProjectCard({project}){
     }
     const customStyling={
         zIndex:500,
-        height: '480px', 
-        width: '350px', 
+        height: '60vh', 
+        width: '45vh', 
         padding:'10px',
         borderRadius:'10px',
         boxShadow:'0px 0px 5px #EEF5FF',
@@ -31,7 +31,7 @@ function ProjectCard({project}){
         backgroundSize:'100% 42%',
         backgroundRepeat: 'no-repeat',
         display:'flex',
-        alignItems:'flex-end'
+        alignItems:'flex-end',
         
     }
     const clampStyling={
@@ -45,8 +45,7 @@ function ProjectCard({project}){
         textOverflow: "ellipsis",
         margin:0,
         padding:0,
-        height:'52%'
-        
+        height:'52%',
     }
     
     const handleClick=()=>{
