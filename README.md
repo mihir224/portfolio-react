@@ -17,5 +17,7 @@ A project that I'm currently working on where I'll be creating a website using R
 - Added social profiles and frameworks in the contact section
 - Setup emailjs for emailing service
 - Added "download resume" button on home page
+- Made the page responsive for smaller screens
+
 
 
