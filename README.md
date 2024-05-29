@@ -1,6 +1,6 @@
 # Portfolio React
 
-Using React to demonstrate my skills and portfolio. No backend yet.
+Using React to demonstrate my skills and portfolio.
 
 ## Current Progress
 
