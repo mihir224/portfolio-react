@@ -1,6 +1,6 @@
 # Portfolio React
 
-A project that I'm currently working on where I'll be creating a website using React to demonstrate my Portfolio. 
+Using React to demonstrate my skills and portfolio. 
 
 ## Current Progress
 
