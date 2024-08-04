@@ -13,7 +13,7 @@ function Work(){
         border:'none',
         margin:0,
         padding:'20px',
-        textAlign:'justify'
+        textAlign:'justify',
     } 
     const iconStyling={ 
         background: 'white', 

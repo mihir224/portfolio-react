@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 #projects-div{
     display: flex;
     align-items: center;
@@ -8,6 +10,15 @@
     }
     @media screen and (max-width: 1300px) {
         gap:10px;
+    }
+    @include mobile{
+        padding-top: 40px;
+        gap:15px
+    }
+}
+.project-card{
+    @include mobile{
+        color: red;
     }
 }
 #card-body{
@@ -30,7 +41,9 @@
         &:hover{
             text-decoration: underline;
         }
-
+        @include mobile{
+            align-self: center ;
+        }
     }
     img{
         border-top-right-radius: 10px;

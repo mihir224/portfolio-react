@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 #contact-div{
     display: flex;
     align-items: center;
@@ -7,8 +9,10 @@
     width: 100%;
     @media screen and (max-width: 1300px) {
         flex-direction: column;
-        height:auto;
-        
+        height:auto;   
+    }
+    @include mobile{
+        background:inherit ;
     }
    
 }
@@ -34,6 +38,7 @@
             text-decoration: underline;
         }
     }  
+   
     
 }
 
@@ -123,7 +128,10 @@
             background-color: rgba(255, 255, 255, 0.9);
         }
     }
-
+    @include mobile{
+        width: 300px;
+        margin-top: 40px;
+    }
 }
 
 #phone-container{
@@ -143,6 +151,9 @@
     text-align: center;
     gap:20px;
     padding:10px;
+    @include mobile{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
 #fr-img{

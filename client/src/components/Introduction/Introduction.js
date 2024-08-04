@@ -21,7 +21,7 @@ function Introduction(){
         },
         {
             title:"Contact Me",
-            section:"Coding & Socials"
+            section:"Coding+Socials"
         },
         {
             title:"Download Resume",

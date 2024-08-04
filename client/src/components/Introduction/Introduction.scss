@@ -83,6 +83,9 @@ h1{
         }
     }
    }
+   @include mobile{
+    padding:0;
+ }
 }
 
 #img-container{
